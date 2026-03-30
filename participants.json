@@ -2,7 +2,27 @@
   "age": {
     "LongName": "",
     "Description": "age of the participant",
-    "Units": "year"
+    "Units": "year",
+    "Annotations": {
+      "IsAbout": {
+        "TermURL": "nb:Age",
+        "Label": "Age"
+      },
+      "VariableType": "Continuous",
+      "Format": {
+        "TermURL": "nb:FromFloat",
+        "Label": "float"
+      },
+      "MissingValues": [
+        "n/a",
+        "N/A",
+        "na",
+        "NA",
+        "nan",
+        "NaN",
+        ""
+      ]
+    }
   },
   "sex": {
     "LongName": "",
@@ -11,7 +31,25 @@
       "male": "male",
       "female": "female"
     },
-    "Units": ""
+    "Units": "",
+    "Annotations": {
+      "IsAbout": {
+        "TermURL": "nb:Sex",
+        "Label": "Sex"
+      },
+      "VariableType": "Categorical",
+      "Levels": {
+        "female": {
+          "TermURL": "snomed:248152002",
+          "Label": "Female"
+        },
+        "male": {
+          "TermURL": "snomed:248153007",
+          "Label": "Male"
+        }
+      },
+      "MissingValues": []
+    }
   },
   "asm_number": {
     "LongName": "",
@@ -92,5 +130,15 @@
       "Geographical_external_cohort2": "Independent test dataset from another institution (2)"
     },
     "Units": ""
+  },
+  "participant_id": {
+    "Description": "",
+    "Annotations": {
+      "IsAbout": {
+        "TermURL": "nb:ParticipantID",
+        "Label": "Participant ID"
+      },
+      "VariableType": "Identifier"
+    }
   }
 }
